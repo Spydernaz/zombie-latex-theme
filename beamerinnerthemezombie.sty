@@ -1,5 +1,6 @@
 \mode<presentation>
 
+\usepackage{graphicx}
 
 % Title page
 % Default page
@@ -12,6 +13,17 @@
 \setbeamertemplate{itemize item}[circle]
 \setbeamertemplate{itemize subitem}[circle]
 \setbeamertemplate{itemize subsubitem}[circle]
+
+
+
+\defbeamertemplate{itemize item}{image}{\small\raisebox{-0.3em}{\includegraphics[width=1.6em]{./images/brain.jpg}}}
+\defbeamertemplate{itemize subitem}{image}{\scriptsize\raisebox{-0.3em}{\includegraphics[width=1.6em]{./images/brain.jpg}}}
+\defbeamertemplate{itemize subsubitem}{image}{\tiny\raisebox{-0.3em}{\includegraphics[width=1.6em]{./images/brain.jpg}}}
+
+\setbeamertemplate{itemize item}[image]
+\setbeamertemplate{itemize subitem}[image]
+\setbeamertemplate{itemize subsubitem}[image]
+
 
 % Block
 \defbeamertemplate*{block begin}{green}{
